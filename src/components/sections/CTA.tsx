@@ -3,7 +3,7 @@ import { Section } from '../layout/ScrollLayout';
 
 export function CTA() {
     return (
-        <Section id="cta" className="bg-black text-white relative overflow-hidden">
+        <Section id="cta" className="bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 dark:from-black dark:via-black dark:to-black text-white relative overflow-hidden">
             <motion.div
                 className="z-10 text-center"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -35,10 +35,11 @@ export function CTA() {
             </motion.div>
 
             {/* Background Neon Elements */}
-            <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-30">
-                <div className="w-[500px] h-[500px] bg-blue-500 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
-                <div className="w-[500px] h-[500px] bg-purple-500 rounded-full blur-[120px] mix-blend-screen animate-pulse delay-75 position-absolute" style={{ transform: 'translate(50%, -20%)' }} />
+            <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-20 dark:opacity-30">
+                <div className="w-[500px] h-[500px] bg-blue-400 dark:bg-blue-500 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
+                <div className="w-[500px] h-[500px] bg-purple-400 dark:bg-purple-500 rounded-full blur-[120px] mix-blend-screen animate-pulse delay-75 position-absolute" style={{ transform: 'translate(50%, -20%)' }} />
             </div>
         </Section>
     );
 }
+

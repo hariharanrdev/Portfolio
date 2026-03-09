@@ -14,7 +14,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             transition={{ delay: index * 0.15 }}
             whileHover={{ scale: 1.02 }}
         >
-            <div className="bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/10 backdrop-blur-sm p-6 flex flex-col justify-between transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20 h-full">
+            <div className="bg-gradient-to-br from-black/[0.03] to-black/[0.06] dark:from-white/10 dark:to-white/5 rounded-2xl border border-black/10 dark:border-white/10 backdrop-blur-sm p-6 flex flex-col justify-between transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20 h-full">
                 <div>
                     <span className="text-xs font-medium text-accent mb-2 inline-block">{project.role}</span>
                     <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
@@ -23,7 +23,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     <p className="text-sm opacity-70 mb-4 leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                         {project.tech.map((t) => (
-                            <span key={t} className="text-xs px-2 py-1 rounded bg-white/5 border border-white/10">
+                            <span key={t} className="text-xs px-2 py-1 rounded bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
                                 {t}
                             </span>
                         ))}

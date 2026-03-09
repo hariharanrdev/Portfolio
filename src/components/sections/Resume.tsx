@@ -32,7 +32,7 @@ export function Resume() {
                     />
 
                     {/* Card Content */}
-                    <div className="relative bg-background rounded-xl px-12 py-16 border border-white/10 flex flex-col items-center gap-4 transition-transform group-hover:-translate-y-1">
+                    <div className="relative bg-background rounded-xl px-12 py-16 border border-black/10 dark:border-white/10 flex flex-col items-center gap-4 transition-transform group-hover:-translate-y-1">
                         <FiDownload size={48} className="text-primary group-hover:scale-110 transition-transform duration-300" />
                         <span className="text-xl font-medium tracking-wide">Download Full Resume</span>
                         <span className="text-sm text-muted-foreground">PDF Format • 2.5 MB</span>

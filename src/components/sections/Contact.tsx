@@ -52,7 +52,7 @@ export function Contact() {
 
                 <motion.form
                     onSubmit={handleSubmit(onSubmit)}
-                    className="space-y-6 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-md"
+                    className="space-y-6 bg-black/[0.03] dark:bg-white/5 p-8 rounded-3xl border border-black/10 dark:border-white/10 backdrop-blur-md"
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -124,7 +124,7 @@ function SocialLink({ href, icon, label, delay }: { href: string, icon: React.Re
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-full bg-white/5 border border-white/10 hover:bg-primary hover:border-primary hover:text-white transition-colors relative group"
+            className="p-4 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 hover:bg-primary hover:border-primary hover:text-white transition-colors relative group"
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay, type: "spring", stiffness: 200 }}

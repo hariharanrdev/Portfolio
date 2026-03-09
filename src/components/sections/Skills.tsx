@@ -44,7 +44,7 @@ export function Skills() {
                     {technicalSkills.map((skill, index) => (
                         <motion.div
                             key={skill.name}
-                            className="bg-white/5 p-5 rounded-2xl border border-white/10 backdrop-blur-sm"
+                            className="bg-black/[0.03] dark:bg-white/5 p-5 rounded-2xl border border-black/10 dark:border-white/10 backdrop-blur-sm"
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ delay: index * 0.1 }}
@@ -54,7 +54,7 @@ export function Skills() {
                                 <span className="font-bold text-lg">{skill.name}</span>
                                 <span className="text-primary font-mono">{skill.level}%</span>
                             </div>
-                            <div className="h-3 bg-white/10 rounded-full overflow-hidden relative">
+                            <div className="h-3 bg-black/10 dark:bg-white/10 rounded-full overflow-hidden relative">
                                 <motion.div
                                     className="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-accent rounded-full"
                                     initial={{ width: 0 }}

@@ -28,7 +28,7 @@ export function About() {
                     transition={{ duration: 0.8 }}
                 >
                     {/* Avatar placeholder */}
-                    <div className="aspect-square w-48 rounded-2xl overflow-hidden bg-gradient-to-tr from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-900 shadow-2xl flex items-center justify-center mb-8 mx-auto md:mx-0">
+                    <div className="aspect-square w-48 rounded-2xl overflow-hidden bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 shadow-2xl flex items-center justify-center mb-8 mx-auto md:mx-0">
                         <span className="text-6xl">👋</span>
                     </div>
 
@@ -36,7 +36,7 @@ export function About() {
                     <h4 className="font-bold text-sm tracking-widest uppercase text-primary mb-4">Education</h4>
                     <div className="space-y-4">
                         {siteConfig.education.map((edu) => (
-                            <div key={edu.degree} className="bg-white/5 p-4 rounded-xl border border-white/10">
+                            <div key={edu.degree} className="bg-black/[0.03] dark:bg-white/5 p-4 rounded-xl border border-black/10 dark:border-white/10">
                                 <p className="font-semibold">{edu.degree}</p>
                                 <p className="text-sm opacity-70">{edu.institution}</p>
                                 <p className="text-xs opacity-50 mt-1">{edu.year} &middot; {edu.score}</p>
@@ -65,7 +65,7 @@ export function About() {
                     {/* Internship */}
                     <motion.div variants={itemVariants} className="mb-8">
                         <h4 className="font-bold text-sm tracking-widest uppercase text-primary mb-3">Internship</h4>
-                        <div className="bg-white/5 p-5 rounded-xl border border-white/10">
+                        <div className="bg-black/[0.03] dark:bg-white/5 p-5 rounded-xl border border-black/10 dark:border-white/10">
                             <p className="font-semibold text-lg">{siteConfig.internship.role}</p>
                             <p className="text-sm opacity-70">{siteConfig.internship.company} &middot; {siteConfig.internship.period}</p>
                             <ul className="mt-3 list-disc list-inside space-y-1 text-sm opacity-80">

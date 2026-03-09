@@ -56,7 +56,7 @@ export function Hero() {
                 >
                     <a
                         href="#projects"
-                        className="px-8 py-3 rounded-full bg-primary text-white font-medium hover:opacity-90 transition-opacity"
+                        className="px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity text-white bg-primary-light dark:bg-primary-dark shadow-lg"
                     >
                         View Work
                     </a>
