@@ -119,8 +119,8 @@ Open `index.html` in your browser.
 If you'd like to collaborate or hire me:
 
 * GitHub: [https://github.com/hariharanrdev](https://github.com/hariharanrdev)
-* LinkedIn: (Add your LinkedIn profile)
-* Email: (Add your email)
+* LinkedIn: [www.linkedin.com/in/hariharanr04](www.linkedin.com/in/hariharanr04)
+* Email: [hariharanrdev@gmail.com](hariharanrdev@gmail.com)
 
 ---
 
